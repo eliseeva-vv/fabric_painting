@@ -1,0 +1,32 @@
+body {
+  background-color: #3B181E;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main_photo {
+background-image: url(../img/main.jpg);
+/* background-color: ; */
+}
+
+.main_header {
+font-family: "Forum", "Georgia", serif;
+font-style: normal;
+font-weight: normal;
+font-size: 120px;
+line-height: 132px;
+text-align: center;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
