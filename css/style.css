@@ -473,19 +473,13 @@ h1 {
   text-align: left;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid var(--basic-black);
+  /* outline: 1px solid var(--basic-black); */
   margin-bottom: 20px;
+  color: var(--basic-white);
 }
 
 .price-terms-item ul {
   list-style: none;
-}
-
-.price-terms:hover,
-.price-terms:active {
-  outline: 4px solid var(--special);
-  background-color: var(--basic-blue);
-  color: var(--basic-black);
 }
 
 .price-terms h3 {
@@ -501,15 +495,24 @@ h1 {
 }
 
 .price-terms-price {
-  /* background-color: transparent; */
-  background: rgb(217,7,80);
-background: linear-gradient(90deg, rgba(217,7,80,1) 0%, rgba(255,255,255,1) 100%);
-/* background-image: url("img/price-terms icons/purse-wallet-svgrepo-com.svg"); */
+  background-image: linear-gradient(90deg, rgba(217,7,80,1) 75%, rgba(255,255,255,1) 100%),
+ url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
+ background-blend-mode: overlay;
+background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+border-radius: 100px 0 0;
 }
 
 .price-terms-terms {
-  background: rgb(255,255,255);
- background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(140,27,80,1) 100%);
+ background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,27,80,1) 25%),
+ url("../img/price-terms icons/hourglass.svg");
+ background-blend-mode: overlay;
+background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+ border-radius: 0 0 100px;
+ text-align: center;
 }
 
 /* Product care */
