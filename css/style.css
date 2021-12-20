@@ -257,6 +257,7 @@ align-items: center;
 /* Feedback */
 .feedback {
   margin-bottom: 70px;
+  background-color: var(--basic-purple);
 }
 
 .feedback h2 {
@@ -268,6 +269,7 @@ align-items: center;
   margin-bottom: 50px;
   padding: 0;
   text-align: center;
+  color: var(--basic-light-orange);
 }
 
 .feedback-list {
@@ -287,7 +289,6 @@ align-items: center;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid var(--basic-white);
   margin-bottom: 20px;
 }
 
@@ -303,18 +304,28 @@ align-items: center;
   margin: 0 10px;
 }
 
+.feedback figure {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback img {
+  box-shadow: 20px 20px #f7a284;
+}
+
 .feedback blockquote {
     position: relative;
     padding: 16px 24px;
     margin: 16px 46px;
     /* font-size: 16px; */
     text-align: center;
+    color: var(--basic-white);
 }
 
 .feedback blockquote::before,
 .feedback blockquote::after {
     position: absolute;
-    color: rgba(217,7,80,1);
+    color: var(--basic-light-orange);
     font-size: 110px;
     font-family: Times, sans-serif;
     line-height: 110px;
@@ -333,7 +344,7 @@ align-items: center;
 }
 
 .feedback blockquote cite {
-    color: rgba(217,7,80,1);
+    color: var(--basic-orange);
     font-size: 16px;
     padding-top: 25px;
     display: block;
