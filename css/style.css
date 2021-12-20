@@ -240,6 +240,20 @@ h1 {
   margin-bottom: 10px;
 }
 
+.gallery-item ul {
+  list-style: none;
+  display: flex;
+align-items: center;
+
+  min-height: 200px;
+
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 0;
+}
+
 /* Feedback */
 .feedback {
   margin-bottom: 70px;
@@ -258,27 +272,12 @@ h1 {
 
 .feedback-list {
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr 1fr;
   /* grid-template-rows: 2fr 1fr; */
-  gap: 50px;
-  grid-template-areas:
-    "A B"
-    "C C";
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.feedback-lubov {
-  grid-area: A;
-}
-
-.feedback-kail {
-  grid-area: B;
-}
-
-.feedback-tippet {
-  grid-area: C;
 }
 
 .feedback-item {
