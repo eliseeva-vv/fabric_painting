@@ -179,6 +179,7 @@ h1 {
 .main-heading-link:hover,
 .main-heading-link:focus {
   background-color: var(--special);
+  color: var(--basic-black);
 }
 
 /* Gallery */
@@ -269,7 +270,7 @@ align-items: center;
   margin-bottom: 50px;
   padding: 0;
   text-align: center;
-  color: var(--basic-light-orange);
+  color: var(--basic-white);
 }
 
 .feedback-list {
@@ -290,6 +291,7 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 19px;
 }
 
 .feedback-item h3 {
@@ -310,7 +312,7 @@ align-items: center;
 }
 
 .feedback img {
-  box-shadow: 20px 20px #f7a284;
+  box-shadow: 20px 20px rgba(242, 109, 61, .5);
 }
 
 .feedback blockquote {
@@ -320,6 +322,7 @@ align-items: center;
     /* font-size: 16px; */
     text-align: center;
     color: var(--basic-white);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .feedback blockquote::before,
@@ -387,13 +390,6 @@ align-items: center;
   margin-bottom: 20px;
 }
 
-.how-to-order-item:hover,
-.how-to-order-item:active {
-  outline: 4px solid var(--special);
-  background-color: var(--basic-blue);
-  color: var(--basic-black);
-}
-
 .how-to-order-item h3 {
   margin: 0;
   padding: 0;
@@ -403,7 +399,9 @@ align-items: center;
 }
 
 .how-to-order-item p {
-  margin: 0 10px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .how-to-order h3 {
@@ -414,8 +412,23 @@ align-items: center;
   line-height: 45px;
 }
 
-.how-to-order-button {
-  margin-bottom: 10px;
+.how-to-order-link {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+
+.how-to-order-link:hover,
+.how-to-order-link:focus {
+  background-color: var(--special);
+  color: var(--basic-black);
 }
 
 .order-columns {
@@ -426,9 +439,177 @@ align-items: center;
 
 .order-columns p {}
 
+/* Price&terms */
+
+.price-terms {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+/* .price-terms-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
+
+.price-terms-item {
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  /* outline: 1px solid var(--basic-black); */
+  margin-bottom: 20px;
+  color: var(--basic-white);
+}
+
+.price-terms-item ul {
+  /* list-style: none; */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.price-terms h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.price-terms-item p {
+  /* margin: 0 10px; */
+}
+
+.price-terms span {
+  margin-bottom: 10px;
+}
+
+.price-terms-price {
+  background-image: linear-gradient(90deg, rgba(217,7,80,1) 75%, rgba(255,255,255,1) 100%),
+ url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
+ background-blend-mode: overlay;
+background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+border-radius: 100px 0 0;
+}
+
+.price-terms-terms {
+ background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,27,80,1) 25%),
+ url("../img/price-terms icons/hourglass.svg");
+ background-blend-mode: overlay;
+background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+ border-radius: 0 0 100px;
+ text-align: center;
+}
+
+/* Price examples */
+
+.price-examples {
+  margin-bottom: 70px;
+}
+
+.price-examples-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 2fr 1fr; */
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price-examples-item {
+  min-height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price-examples h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+
+/* .feedback-item p {
+  margin: 0 10px;
+}
+
+.feedback figure {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback img {
+  box-shadow: 20px 20px rgba(242, 109, 61, .5);
+}
+
+.feedback blockquote {
+    position: relative;
+    padding: 16px 24px;
+    margin: 16px 46px;
+    /* font-size: 16px; */
+    text-align: center;
+    color: var(--basic-white);
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.feedback blockquote::before,
+.feedback blockquote::after {
+    position: absolute;
+    color: var(--basic-light-orange);
+    font-size: 110px;
+    font-family: Times, sans-serif;
+    line-height: 110px;
+}
+
+.feedback blockquote::before {
+    content: "“";
+    left: -30px;
+    top: -10px;
+}
+
+.feedback blockquote::after {
+    content: "”";
+    right: -30px;
+    bottom: -10px;
+}
+
+.feedback blockquote cite {
+    color: var(--basic-orange);
+    font-size: 16px;
+    padding-top: 25px;
+    display: block;
+    font-style: normal;
+}
+
 /* Delivery&payment */
 .delivery-payment {
   margin-bottom: 70px;
+  background-color: var(--basic-purple);
+  color: var(--basic-white);
 }
 
 .delivery-payment h2 {
@@ -458,15 +639,7 @@ align-items: center;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid var(--basic-white);
   margin-bottom: 20px;
-}
-
-.delivery-payment:hover,
-.delivery-payment:active {
-  outline: 4px solid var(--special);
-  background-color: var(--basic-blue);
-  color: var(--basic-black);
 }
 
 .delivery-payment h3 {
@@ -481,75 +654,6 @@ align-items: center;
   margin: 0 10px;
 }
 
-/* Price&terms */
-
-.price-terms {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 50px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 70px;
-}
-
-/* .price-terms-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
-
-.price-terms-item {
-  min-height: 50px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: space-between;
-  align-items: center;
-  /* outline: 1px solid var(--basic-black); */
-  margin-bottom: 20px;
-  color: var(--basic-white);
-}
-
-.price-terms-item ul {
-  list-style: none;
-}
-
-.price-terms h3 {
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
-  font-size: 30px;
-  line-height: 45px;
-}
-
-.price-terms-item p {
-  margin: 0 10px;
-}
-
-.price-terms-price {
-  background-image: linear-gradient(90deg, rgba(217,7,80,1) 75%, rgba(255,255,255,1) 100%),
- url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
- background-blend-mode: overlay;
-background-size: contain;
-background-position: right;
-background-repeat: no-repeat;
-border-radius: 100px 0 0;
-}
-
-.price-terms-terms {
- background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,27,80,1) 25%),
- url("../img/price-terms icons/hourglass.svg");
- background-blend-mode: overlay;
-background-size: contain;
-background-position: left;
-background-repeat: no-repeat;
- border-radius: 0 0 100px;
- text-align: center;
-}
 
 /* Product care */
 .product-care {
@@ -583,15 +687,7 @@ background-repeat: no-repeat;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid var(--basic-white);
   margin-bottom: 20px;
-}
-
-.product-care:hover,
-.product-care:active {
-  outline: 4px solid var(--special);
-  background-color: var(--basic-blue);
-  color: var(--basic-black);
 }
 
 .product-care h3 {
@@ -600,18 +696,96 @@ background-repeat: no-repeat;
   padding-top: 5px;
   font-size: 30px;
   line-height: 45px;
+  text-align: center;
 }
 
 .product-care-item p {
   margin: 0 10px;
 }
 
-.product-care-columns
+.product-care-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+/* .how-to-order-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-to-order-item {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid var(--basic-white);
+  margin-bottom: 20px;
+}
+
+.how-to-order-item h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.how-to-order-item p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.how-to-order h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.how-to-order-link {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+
+.how-to-order-link:hover,
+.how-to-order-link:focus {
+  background-color: var(--special);
+  color: var(--basic-black);
+}
+
+.order-columns {
+
+} */
+
 
 /* Contacts */
 .contacts {
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
+  display: flex;
+  flex-direction: column;
 }
+
+.contacts-info {
+
+}
+
 
 .contacts h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
@@ -624,8 +798,29 @@ background-repeat: no-repeat;
   text-align: center;
 }
 
+.contacts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts a {
+  color: var(--basic-red);
+  text-decoration: underline;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--special);
+}
+
+.contacts li {
+  margin-bottom: 10px;
+}
+
 /* Main footer */
 .main-footer {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
