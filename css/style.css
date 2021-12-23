@@ -26,7 +26,6 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -80,6 +79,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 10px;
   margin-bottom: 70px;
 }
 
@@ -312,7 +313,9 @@ align-items: center;
 }
 
 .feedback img {
-  box-shadow: 20px 20px rgba(242, 109, 61, .5);
+  /* box-shadow: 20px 20px rgba(242, 109, 61, .5); */
+  /* box-shadow: 20px 20px rgba(0, 0, 0, .5); */
+  box-shadow: 20px 20px rgba(255, 255, 255, .1);
 }
 
 .feedback blockquote {
@@ -328,7 +331,8 @@ align-items: center;
 .feedback blockquote::before,
 .feedback blockquote::after {
     position: absolute;
-    color: var(--basic-light-orange);
+    /* color: var(--basic-light-orange); */
+    color: var(--basic-white);
     font-size: 110px;
     font-family: Times, sans-serif;
     line-height: 110px;
@@ -347,7 +351,6 @@ align-items: center;
 }
 
 .feedback blockquote cite {
-    color: var(--basic-orange);
     font-size: 16px;
     padding-top: 25px;
     display: block;
@@ -498,23 +501,19 @@ align-items: center;
 }
 
 .price-terms-price {
-  background-image: linear-gradient(90deg, rgba(217,7,80,1) 75%, rgba(255,255,255,1) 100%),
- url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
- background-blend-mode: overlay;
+  background-color: var(--basic-purple);
+  background-image: url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
 background-size: contain;
 background-position: right;
 background-repeat: no-repeat;
-border-radius: 100px 0 0;
 }
 
 .price-terms-terms {
- background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,27,80,1) 25%),
- url("../img/price-terms icons/hourglass.svg");
- background-blend-mode: overlay;
+  background-color: var(--basic-purple);
+ background-image: url("../img/price-terms icons/hourglass.svg");
 background-size: contain;
 background-position: left;
 background-repeat: no-repeat;
- border-radius: 0 0 100px;
  text-align: center;
 }
 
@@ -597,13 +596,13 @@ background-repeat: no-repeat;
     bottom: -10px;
 }
 
-.feedback blockquote cite {
+/* .feedback blockquote cite {
     color: var(--basic-orange);
     font-size: 16px;
     padding-top: 25px;
     display: block;
     font-style: normal;
-}
+} */
 
 /* Delivery&payment */
 .delivery-payment {
