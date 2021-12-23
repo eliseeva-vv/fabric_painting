@@ -223,9 +223,9 @@ h1 {
   /* background-color: var(--basic-purple);*/
   /* color: var(--basic-white); */
   background-color: rgba(140, 27, 80, .2);
-    /* color: var(--special); */
-    /* color: var(--basic-purple); */
-    outline: 1px solid var(--basic-purple);
+  /* color: var(--special); */
+  /* color: var(--basic-purple); */
+  outline: 1px solid var(--basic-purple);
 }
 
 .gallery-item h3 {
@@ -243,12 +243,10 @@ h1 {
 .gallery-item ul {
   list-style: none;
   display: flex;
-align-items: center;
-margin: 0;
-padding: 0;
-
+  align-items: center;
+  margin: 0;
+  padding: 0;
   min-height: 200px;
-
 }
 
 .gallery figure {
@@ -340,42 +338,42 @@ padding: 0;
 }
 
 .feedback blockquote {
-    position: relative;
-    padding: 16px 24px;
-    margin: 16px 46px;
-    /* font-size: 16px; */
-    text-align: center;
-    color: var(--basic-white);
-    background-color: rgba(255, 255, 255, .1);
+  position: relative;
+  padding: 16px 24px;
+  margin: 16px 46px;
+  /* font-size: 16px; */
+  text-align: center;
+  color: var(--basic-white);
+  background-color: rgba(255, 255, 255, .1);
 }
 
 .feedback blockquote::before,
 .feedback blockquote::after {
-    position: absolute;
-    /* color: var(--basic-light-orange); */
-    color: var(--basic-white);
-    font-size: 110px;
-    font-family: Times, sans-serif;
-    line-height: 110px;
+  position: absolute;
+  /* color: var(--basic-light-orange); */
+  color: var(--basic-white);
+  font-size: 110px;
+  font-family: Times, sans-serif;
+  line-height: 110px;
 }
 
 .feedback blockquote::before {
-    content: "“";
-    left: -30px;
-    top: -10px;
+  content: "“";
+  left: -30px;
+  top: -10px;
 }
 
 .feedback blockquote::after {
-    content: "”";
-    right: -30px;
-    bottom: -10px;
+  content: "”";
+  right: -30px;
+  bottom: -10px;
 }
 
 .feedback blockquote cite {
-    font-size: 16px;
-    padding-top: 25px;
-    display: block;
-    font-style: normal;
+  font-size: 16px;
+  padding-top: 25px;
+  display: block;
+  font-style: normal;
 }
 
 /* How to order */
@@ -465,7 +463,6 @@ padding: 0;
 .order-columns p {}
 
 /* Price&terms */
-
 .price-terms {
   display: grid;
   grid-template-columns: 1fr;
@@ -485,7 +482,6 @@ padding: 0;
   padding: 0;
   list-style: none;
 } */
-
 .price-terms-item {
   min-height: 50px;
   display: flex;
@@ -530,9 +526,9 @@ padding: 0;
 .price-terms-price {
   background-color: var(--basic-purple);
   background-image: url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
-background-size: contain;
-background-position: right;
-background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .terms-info {
@@ -542,15 +538,14 @@ background-repeat: no-repeat;
 
 .price-terms-terms {
   background-color: var(--basic-purple);
- background-image: url("../img/price-terms icons/hourglass.svg");
-background-size: contain;
-background-position: left;
-background-repeat: no-repeat;
- text-align: center;
+  background-image: url("../img/price-terms icons/hourglass.svg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 /* Price examples */
-
 .price-examples {
   margin-bottom: 70px;
 }
@@ -602,30 +597,30 @@ background-repeat: no-repeat;
     padding: 16px 24px;
     margin: 16px 46px;
     /* font-size: 16px; */
-    text-align: center;
-    color: var(--basic-white);
-    background-color: rgba(255, 255, 255, .1);
+text-align: center;
+color: var(--basic-white);
+background-color: rgba(255, 255, 255, .1);
 }
 
 .feedback blockquote::before,
 .feedback blockquote::after {
-    position: absolute;
-    color: var(--basic-light-orange);
-    font-size: 110px;
-    font-family: Times, sans-serif;
-    line-height: 110px;
+  position: absolute;
+  color: var(--basic-light-orange);
+  font-size: 110px;
+  font-family: Times, sans-serif;
+  line-height: 110px;
 }
 
 .feedback blockquote::before {
-    content: "“";
-    left: -30px;
-    top: -10px;
+  content: "“";
+  left: -30px;
+  top: -10px;
 }
 
 .feedback blockquote::after {
-    content: "”";
-    right: -30px;
-    bottom: -10px;
+  content: "”";
+  right: -30px;
+  bottom: -10px;
 }
 
 /* .feedback blockquote cite {
@@ -635,7 +630,6 @@ background-repeat: no-repeat;
     display: block;
     font-style: normal;
 } */
-
 /* Delivery&payment */
 .delivery-payment {
   margin-bottom: 70px;
@@ -684,7 +678,6 @@ background-repeat: no-repeat;
 .delivery-payment-item p {
   margin: 0 10px;
 }
-
 
 /* Product care */
 .product-care {
@@ -804,8 +797,6 @@ background-repeat: no-repeat;
 .order-columns {
 
 } */
-
-
 /* Contacts */
 .contacts {
   /* margin-bottom: 70px; */
@@ -813,10 +804,7 @@ background-repeat: no-repeat;
   flex-direction: column;
 }
 
-.contacts-info {
-
-}
-
+.contacts-info {}
 
 .contacts h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
