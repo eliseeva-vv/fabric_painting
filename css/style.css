@@ -191,7 +191,7 @@ h1 {
 .gallery h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 90px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
@@ -202,28 +202,30 @@ h1 {
 .gallery-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .gallery-item {
-  min-height: 250px;
+  min-height: 330px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid var(--basic-white);
-  margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .gallery-item:hover,
 .gallery-item:active {
-  outline: 4px solid var(--special);
-  background-color: var(--basic-blue);
-  color: var(--basic-black);
+  /* background-color: var(--basic-purple);*/
+  /* color: var(--basic-white); */
+  background-color: rgba(140, 27, 80, .2);
+    /* color: var(--special); */
+    /* color: var(--basic-purple); */
+    outline: 1px solid var(--basic-purple);
 }
 
 .gallery-item h3 {
@@ -238,14 +240,12 @@ h1 {
   margin: 0 10px;
 }
 
-.gallery-button {
-  margin-bottom: 10px;
-}
-
 .gallery-item ul {
   list-style: none;
   display: flex;
 align-items: center;
+margin: 0;
+padding: 0;
 
   min-height: 200px;
 
@@ -254,6 +254,25 @@ align-items: center;
 .gallery figure {
   margin: 0;
   padding: 0;
+}
+
+.gallery-link {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  background-color: var(--special);
+  color: var(--basic-black);
 }
 
 /* Feedback */
@@ -265,7 +284,7 @@ align-items: center;
 .feedback h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 90px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
@@ -285,13 +304,15 @@ align-items: center;
 }
 
 .feedback-item {
-  min-height: 250px;
+  min-height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 19px;
 }
 
@@ -365,7 +386,7 @@ align-items: center;
 .how-to-order h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 90px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
@@ -376,27 +397,28 @@ align-items: center;
 .how-to-order-list {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 50px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .how-to-order-item {
-  min-height: 250px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid var(--basic-white);
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
 }
 
-.how-to-order-item h3 {
+.how-to-order h3 {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 45px;
 }
@@ -500,12 +522,22 @@ align-items: center;
   margin-bottom: 10px;
 }
 
+.price-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .price-terms-price {
   background-color: var(--basic-purple);
   background-image: url("../img/price-terms icons/purse-wallet-svgrepo-com.svg");
 background-size: contain;
 background-position: right;
 background-repeat: no-repeat;
+}
+
+.terms-info {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .price-terms-terms {
@@ -614,7 +646,7 @@ background-repeat: no-repeat;
 .delivery-payment h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 90px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
@@ -662,7 +694,7 @@ background-repeat: no-repeat;
 .product-care h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 90px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
@@ -789,7 +821,7 @@ background-repeat: no-repeat;
 .contacts h2 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 90px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
