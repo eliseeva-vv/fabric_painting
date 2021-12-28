@@ -466,12 +466,12 @@ h1 {
 .price-terms {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 50px;
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 70px;
   font-size: 20px;
+  line-height: 30px;
 }
 
 /* .price-terms-list {
@@ -489,7 +489,6 @@ h1 {
   text-align: left;
   justify-content: space-between;
   align-items: center;
-  /* outline: 1px solid var(--basic-black); */
   margin-bottom: 20px;
   color: var(--basic-white);
 }
@@ -520,7 +519,9 @@ h1 {
 
 .price-info {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-terms-price {
@@ -533,6 +534,7 @@ h1 {
 
 .terms-info {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
@@ -573,9 +575,18 @@ h1 {
 .price-examples h3 {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
+  margin-bottom: 40px;
   font-size: 30px;
   line-height: 45px;
+  text-align: center;
+}
+
+.price-examples h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 28px;
+  line-height: 42px;
   text-align: center;
 }
 
@@ -597,7 +608,7 @@ h1 {
     padding: 16px 24px;
     margin: 16px 46px;
     /* font-size: 16px; */
-text-align: center;
+/* text-align: center;
 color: var(--basic-white);
 background-color: rgba(255, 255, 255, .1);
 }
@@ -621,7 +632,7 @@ background-color: rgba(255, 255, 255, .1);
   content: "”";
   right: -30px;
   bottom: -10px;
-}
+} */
 
 /* .feedback blockquote cite {
     color: var(--basic-orange);
@@ -630,6 +641,7 @@ background-color: rgba(255, 255, 255, .1);
     display: block;
     font-style: normal;
 } */
+
 /* Delivery&payment */
 .delivery-payment {
   margin-bottom: 70px;
@@ -643,7 +655,7 @@ background-color: rgba(255, 255, 255, .1);
   line-height: 90px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding: 0;
   text-align: center;
 }
@@ -664,7 +676,7 @@ background-color: rgba(255, 255, 255, .1);
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .delivery-payment h3 {
@@ -677,6 +689,50 @@ background-color: rgba(255, 255, 255, .1);
 
 .delivery-payment-item p {
   margin: 0 10px;
+}
+
+.delivery-payment h3 {
+  position: relative;
+}
+
+.delivery h3::after {
+  content: "";
+position: absolute;
+top: 65px;
+left: 30px;
+width: 80px;
+height: 80px;
+background-image: url(../img/delivery-payment-icons/delivery.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+
+.payment h3::after {
+  content: "";
+position: absolute;
+top: 70px;
+left: 25px;
+width: 80px;
+height: 80px;
+background-image: url(../img/delivery-payment-icons/payment.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+
+.payment p {
+  margin-bottom: 55px;
+}
+
+.return h3::after {
+  content: "";
+position: absolute;
+top: 80px;
+left: 40px;
+width: 50px;
+height: 50px;
+background-image: url(../img/delivery-payment-icons/return.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
 }
 
 /* Product care */
